@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const NavBar = () => {
   return (
-    <nav className='flex justify-between bg-white text-black p-2 shadow-lg fixed w-full'>
+    <nav className='flex justify-between bg-white text-black p-2 shadow-lg fixed w-full z-10'>
       <div>
         <Link href='/'>
           <Image
