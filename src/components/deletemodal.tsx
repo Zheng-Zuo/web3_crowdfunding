@@ -9,6 +9,7 @@ import { deleteCampaign, parseErrorMessages } from '@/utils/actions';
 import { useAccount, useNetwork } from 'wagmi';
 import { Alert, CircularProgress } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image'
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -133,8 +134,13 @@ export default function DeleteModal({ id, status, imageURL, title }: Props) {
               </Alert>
             )}
 
-            <div className="flex justify-center items-center mt-5 w-full h-[40%] rounded-xl overflow-hidden">
-              <img src={imageURL} className='object-contain w-full h-full' />
+            <div className="flex justify-center items-center mt-5 w-full h-[40%] rounded-xl overflow-hidden relative">
+              <Image
+                src={imageURL}
+                alt=""
+                className='object-contain w-full h-full object-center absolute'
+                fill
+              />
             </div>
 
             <div className="flex justify-between items-center mt-5 flex-col gap-2">

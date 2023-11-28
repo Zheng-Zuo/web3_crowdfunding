@@ -21,6 +21,7 @@ import { Alert, CircularProgress } from '@mui/material';
 import { useAccount, useNetwork } from 'wagmi';
 import { ethers } from 'ethers';
 import { createCampaign, parseErrorMessages } from '@/utils/actions';
+import Image from 'next/image'
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -202,7 +203,12 @@ export default function AddModal() {
                     {
                       field.value ?
                         <div className='relative w-full h-full'>
-                          <img src={field.value} className='object-contain w-full h-full' />
+                          <Image
+                            src={field.value}
+                            alt="img"
+                            className='object-contain w-full h-full object-center absolute'
+                            fill
+                          />
                         </div> :
                         isDragActive ?
                           <p className='p-4'>Drop the image here ...</p> :
