@@ -1,7 +1,7 @@
 # FundMe
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Zheng-Zuo/web3_raffle)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Zheng-Zuo/web3_raffle/pulls)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Zheng-Zuo/web3_crowdfunding)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Zheng-Zuo/web3_crowdfunding/pulls)
 
 FundMe is a Web3 based crowdfunding platform that enables users to initiate and contribute towards fundraising campaigns. The project incorporates the verification of smart contract on EtherScan, interaction with the contract through the Wagmi library, and the integration of Firebase storage system for media files management.
 
@@ -22,8 +22,8 @@ To get this project up and running:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Zheng-Zuo/web3_raffle.git
-    cd web3_raffle
+    git clone https://github.com/Zheng-Zuo/web3_crowdfunding.git
+    cd web3_crowdfunding
     ```
 
 2. Navigate into each sub-repository (`hardhat` and `src`) and install their respective dependencies:
