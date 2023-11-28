@@ -14,6 +14,7 @@ import { useEffect, useRef, useState } from 'react';
 import { backCampaign, parseErrorMessages } from '@/utils/actions';
 import { ethers } from 'ethers';
 import { Alert, CircularProgress } from '@mui/material';
+import Image from 'next/image'
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -148,7 +149,12 @@ export default function BackModal({ id, imageURL, title }: Props) {
             )}
 
             <div className="flex justify-center items-center mt-5 w-full h-[40%] rounded-xl overflow-hidden">
-              <img src={imageURL} className='object-contain w-full h-full' />
+              <Image 
+                src={imageURL} 
+                alt=""
+                className='object-contain w-full h-full object-center'
+                fill 
+              />
             </div>
 
             <div className="flex justify-between items-center mt-5">
