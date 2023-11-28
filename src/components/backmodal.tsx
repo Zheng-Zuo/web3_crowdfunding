@@ -148,11 +148,11 @@ export default function BackModal({ id, imageURL, title }: Props) {
               </Alert>
             )}
 
-            <div className="flex justify-center items-center mt-5 w-full h-[40%] rounded-xl overflow-hidden">
+            <div className="flex justify-center items-center mt-5 w-full h-[40%] rounded-xl overflow-hidden relative">
               <Image 
                 src={imageURL} 
                 alt=""
-                className='object-contain w-full h-full object-center'
+                className='object-contain w-full h-full object-center absolute'
                 fill 
               />
             </div>
