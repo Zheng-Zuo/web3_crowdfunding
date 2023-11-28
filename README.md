@@ -5,7 +5,7 @@
 
 FundMe is a Web3 based crowdfunding platform that enables users to initiate and contribute towards fundraising campaigns. The project incorporates the verification of smart contract on EtherScan, interaction with the contract through the Wagmi library, and the integration of Firebase storage system for media files management.
 
-Check out the **[Live Demo here](http://fundme.momocoder.com)** *(Note: Users from Mainland China need to use a VPN to bypass the GFW for rendering images)*. The project is deployed on the Sepolia testnet, hence you need to connect with Sepolia to interact with the contract. You can get dome free Sepolia ETH at: https://sepoliafaucet.com/
+Check out the **[Live Demo here](http://fundme.momocoder.com)** *(Note: Users from Mainland China need to use a VPN to bypass the GFW for rendering images)*. The project is deployed on the Sepolia testnet, hence you need to connect with Sepolia to interact with the contract. You can get some free Sepolia ETH at: https://sepoliafaucet.com/
 
 ## Features
 - Fully responsive design compatible across all devices.
