@@ -70,7 +70,7 @@ const ProjectCard = (campaign: campaignProps) => {
             {campaign.numOfBackers} Backer{campaign.numOfBackers === 1 ? '' : 's'}
           </small>
           <div>
-            {expired ? (
+            {expired && (campaign?.status == 0 || campaign?.status == 2) ? (
               <small className="text-red-500">Expired</small>
             ) : campaign?.status == 0 ? (
               <small className="text-gray-500">Open</small>
