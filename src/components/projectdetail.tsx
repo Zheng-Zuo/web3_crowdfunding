@@ -154,7 +154,7 @@ const ProjectDetail = ({ id }: { id: number }) => {
               </div>
 
               <div className="font-bold">
-                {expired ? (
+                {expired && (campaign?.status == 0 || campaign?.status == 2) ? (
                   <small className="text-red-500">Expired</small>
                 ) : campaign?.status == 0 ? (
                   <small className="text-gray-500">Open</small>
